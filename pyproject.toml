@@ -1,0 +1,134 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "advanced-weighting-systems"
+version = "0.1.0"
+description = "Resonance-based, symbolically mirrored coupling of heterogeneous NN models in the AeonLayer for AeonAI (GenesisAeon project, CREP + Sigillin from unified-mandala)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "GenesisAeon", email = "genesis@aeon.ai" }]
+keywords = [
+    "neural-networks",
+    "weighting",
+    "resonance",
+    "aeon",
+    "mandala",
+    "sigillin",
+    "entropy",
+    "CREP",
+    "mirror-machine",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "pydantic>=2.5.0",
+    "torch>=2.1.0",
+]
+
+[project.optional-dependencies]
+stack = [
+    "mirror-machine>=0.1.0",
+    "entropy-governance>=0.1.0",
+    "sigillin>=0.1.0",
+    "mandala-visualizer>=0.1.0",
+    "utac-core>=0.1.0",
+    "cosmic-web>=0.1.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "ruff>=0.1.8",
+    "mypy>=1.7.0",
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.4.0",
+    "mkdocstrings[python]>=0.24.0",
+    "mkdocs-autorefs>=0.5.0",
+]
+
+[project.scripts]
+aws = "advanced_weighting_systems.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/GenesisAeon/AdvancedWeightingSystems"
+Documentation = "https://genesisaeon.github.io/AdvancedWeightingSystems"
+Repository = "https://github.com/GenesisAeon/AdvancedWeightingSystems"
+"Bug Tracker" = "https://github.com/GenesisAeon/AdvancedWeightingSystems/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/advanced_weighting_systems"]
+
+[tool.ruff]
+src = ["src"]
+line-length = 99
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "ANN", # flake8-annotations
+    "S",   # flake8-bandit
+    "PTH", # flake8-use-pathlib
+    "RUF", # ruff-specific
+]
+ignore = [
+    "S101",   # Use of assert detected
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ANN", "S"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["advanced_weighting_systems"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+    "--cov=advanced_weighting_systems",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--cov-fail-under=99",
+    "-v",
+]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["src/advanced_weighting_systems"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "@abstractmethod",
+]

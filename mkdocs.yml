@@ -1,0 +1,57 @@
+site_name: Advanced Weighting Systems
+site_url: https://genesisaeon.github.io/AdvancedWeightingSystems
+site_description: >-
+  Resonance-based, symbolically mirrored coupling of heterogeneous NN models
+  in the AeonLayer for AeonAI (GenesisAeon, CREP + Sigillin).
+site_author: GenesisAeon
+
+repo_name: GenesisAeon/AdvancedWeightingSystems
+repo_url: https://github.com/GenesisAeon/AdvancedWeightingSystems
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - admonition
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            show_root_heading: true
+            docstring_style: numpy
+
+nav:
+  - Home: index.md
+  - Reference: reference.md
+  - CLI: cli.md
+  - Changelog: changelog.md
+
+strict: true
