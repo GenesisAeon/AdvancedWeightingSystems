@@ -233,9 +233,7 @@ class SymbolicMirror:
 
     # ------------------------------------------------------------------
 
-    def reflect(
-        self, activations_list: list[NDArray[np.float64]]
-    ) -> MirrorResult:
+    def reflect(self, activations_list: list[NDArray[np.float64]]) -> MirrorResult:
         """Compute Mirror-Matrices and resonance signals for all adapters.
 
         Parameters

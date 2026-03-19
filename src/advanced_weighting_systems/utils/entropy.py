@@ -108,7 +108,10 @@ class EntropyTable:
     # ------------------------------------------------------------------
 
     def upsert(
-        self, model_id: str, entropy: float, **metadata: Any  # noqa: ANN401
+        self,
+        model_id: str,
+        entropy: float,
+        **metadata: Any,  # noqa: ANN401
     ) -> None:
         """Insert or update the entropy entry for model_id.
 

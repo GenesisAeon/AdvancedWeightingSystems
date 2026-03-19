@@ -68,30 +68,22 @@ class TestResonanceCouplingStep:
         out = coupling.step(acts, h, c, rho)
         assert isinstance(out, CouplingOutput)
 
-    def test_energy_non_negative(
-        self, coupling: ResonanceCoupling, step_inputs: tuple
-    ) -> None:
+    def test_energy_non_negative(self, coupling: ResonanceCoupling, step_inputs: tuple) -> None:
         acts, h, c, rho = step_inputs
         out = coupling.step(acts, h, c, rho)
         assert out.energy >= 0.0
 
-    def test_layer_output_shape(
-        self, coupling: ResonanceCoupling, step_inputs: tuple
-    ) -> None:
+    def test_layer_output_shape(self, coupling: ResonanceCoupling, step_inputs: tuple) -> None:
         acts, h, c, rho = step_inputs
         out = coupling.step(acts, h, c, rho)
         assert out.aeon_state.layer_output.shape == (DIM, DIM)
 
-    def test_weights_sum_to_one(
-        self, coupling: ResonanceCoupling, step_inputs: tuple
-    ) -> None:
+    def test_weights_sum_to_one(self, coupling: ResonanceCoupling, step_inputs: tuple) -> None:
         acts, h, c, rho = step_inputs
         out = coupling.step(acts, h, c, rho)
         np.testing.assert_allclose(out.weighting_result.weights.sum(), 1.0, atol=1e-10)
 
-    def test_mirror_matrices_count(
-        self, coupling: ResonanceCoupling, step_inputs: tuple
-    ) -> None:
+    def test_mirror_matrices_count(self, coupling: ResonanceCoupling, step_inputs: tuple) -> None:
         acts, h, c, rho = step_inputs
         out = coupling.step(acts, h, c, rho)
         assert out.mirror_result.mirror_matrices.shape[0] == 4

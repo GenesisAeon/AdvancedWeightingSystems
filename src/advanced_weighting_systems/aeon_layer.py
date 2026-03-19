@@ -181,6 +181,4 @@ class AeonLayer:
 
     def __repr__(self) -> str:
         cfg = self.config
-        return (
-            f"AeonLayer(n_models={cfg.n_models}, beta={cfg.beta}, theta={cfg.theta})"
-        )
+        return f"AeonLayer(n_models={cfg.n_models}, beta={cfg.beta}, theta={cfg.theta})"
