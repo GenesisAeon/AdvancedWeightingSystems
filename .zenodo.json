@@ -1,0 +1,32 @@
+{
+  "title": "Advanced Weighting Systems: Resonance-based Coupling of Heterogeneous NN Models",
+  "description": "Resonance-based, symbolically mirrored coupling of heterogeneous neural network models in the AeonLayer for AeonAI. GenesisAeon project — CREP + Sigillin from unified-mandala.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "GenesisAeon",
+      "affiliation": "GenesisAeon Project"
+    }
+  ],
+  "keywords": [
+    "neural networks",
+    "weighting",
+    "resonance",
+    "aeon",
+    "mandala",
+    "sigillin",
+    "entropy",
+    "CREP",
+    "mirror-machine",
+    "GenesisAeon"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/GenesisAeon/AdvancedWeightingSystems",
+      "resource_type": "software"
+    }
+  ]
+}
