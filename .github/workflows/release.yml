@@ -118,10 +118,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Download dist artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
+          name: "v0.1.0 – Initial Release: Resonance-based symbolic coupling of heterogeneous neural networks in the AeonLayer"
+          body_path: RELEASE_NOTES.md
           files: |
             dist/*.tar.gz
             dist/*.whl
