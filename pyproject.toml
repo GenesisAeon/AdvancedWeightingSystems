@@ -1,10 +1,10 @@
-[build-system]
+﻿[build-system]
 requires = ["hatchling>=1.21.0"]
 build-backend = "hatchling.build"
 
 [project]
 name = "advanced-weighting-systems"
-version = "0.1.0"
+version = "0.3.1"
 description = "Resonance-based, symbolically mirrored coupling of heterogeneous NN models in the AeonLayer for AeonAI (GenesisAeon project, CREP + Sigillin from unified-mandala)"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -132,3 +132,4 @@ exclude_lines = [
     "raise NotImplementedError",
     "@abstractmethod",
 ]
+
