@@ -1,0 +1,35 @@
+# Contributing
+
+Thanks for your interest in contributing to `advanced-weighting-systems`!
+
+## Getting started
+
+1. Fork and clone the repository.
+2. Create a virtual environment: `python -m venv .venv && source .venv/bin/activate`
+   (or `.venv\Scripts\activate` on Windows).
+3. Install in editable mode with dev dependencies: `pip install -e ".[dev]"`.
+4. Run the test suite: `pytest`.
+
+## Code style
+
+- Format and lint with `ruff format` / `ruff check src tests`.
+- Type-check with `mypy` (strict mode is enabled in `pyproject.toml`).
+- Keep functions documented with docstrings.
+
+## Pull requests
+
+- One logical change per PR.
+- Add or update tests for any behavioral change (coverage must stay >= 99%).
+- Update `CHANGELOG.md` under an `## [Unreleased]` section.
+- Fill out the PR template (`.github/PULL_REQUEST_TEMPLATE.md`).
+
+## Reporting issues
+
+Please use the issue templates in `.github/ISSUE_TEMPLATE/` — they help us
+triage bug reports vs. feature requests quickly.
+
+## Scientific claims
+
+This package implements the CREP/UTAC-Logistic resonance-weighting formulas
+described in the README. If your contribution touches these formulas, cite
+the source and clearly mark speculative vs. validated claims.
