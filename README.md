@@ -221,4 +221,9 @@ Published at: <https://genesisaeon.github.io/AdvancedWeightingSystems>
 
 ## License
 
-[MIT](LICENSE) — GenesisAeon Project, 2026.
+Dual-licensed:
+
+- **Code** (`src/`, `tests/`, scripts, configuration) — [GPL-3.0-or-later](LICENSE-CODE)
+- **Documentation** (README, `docs/`, RELEASE_GUIDE.md, CONTRIBUTING.md, CHANGELOG.md, templates) — [CC BY 4.0](LICENSE-DOCS)
+
+See [LICENSE](LICENSE) for the full split. — GenesisAeon Project, 2026.

@@ -1,15 +1,15 @@
 {
   "title": "Advanced Weighting Systems: Resonance-based Coupling of Heterogeneous NN Models",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "doi": "10.5281/zenodo.19110330",
   "creators": [
     {
       "name": "GenesisAeon Project"
     }
   ],
-  "description": "Resonance-based, symbolically mirrored coupling of heterogeneous neural network models in the AeonLayer for AeonAI. GenesisAeon project — CREP + Sigillin from unified-mandala.",
+  "description": "Resonance-based, symbolically mirrored coupling of heterogeneous neural network models in the AeonLayer for AeonAI. GenesisAeon project — CREP + Sigillin from unified-mandala. Dual-licensed: code under GPL-3.0-or-later, documentation under CC BY 4.0.",
   "keywords": ["AeonLayer", "resonance-weighting", "symbolic-mirror", "UTAC-Logistic", "S∝A", "S∝V", "CREP", "GenesisAeon"],
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "upload_type": "software",
   "access_right": "open"
 }

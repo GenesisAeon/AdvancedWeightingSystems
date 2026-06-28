@@ -1,0 +1,24 @@
+SPDX-License-Identifier: GPL-3.0-or-later
+
+Copyright (c) 2025-2026 GenesisAeon
+
+This program (the source code of this repository, including everything
+under src/, tests/, and other executable code such as scripts and
+configuration files) is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+The full text of the GNU General Public License, version 3, is available
+at: https://www.gnu.org/licenses/gpl-3.0.txt
+
+A copy of the full GPLv3 license text will be added to this file
+(`LICENSE-CODE`) in a follow-up commit once it can be retrieved; until
+then, this notice plus the SPDX identifier above is the authoritative
+statement of the license terms for the source code in this repository,
+per the standard short-form notice recommended by the FSF.

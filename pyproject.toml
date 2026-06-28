@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "advanced-weighting-systems"
-version = "0.3.1"
+version = "1.0.0"
 description = "Resonance-based, symbolically mirrored coupling of heterogeneous NN models in the AeonLayer for AeonAI (GenesisAeon project, CREP + Sigillin from unified-mandala)"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -23,7 +23,7 @@ keywords = [
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -42,12 +42,12 @@ dependencies = [
 
 [project.optional-dependencies]
 stack = [
-    "mirror-machine>=0.1.0",
-    "entropy-governance>=0.1.0",
-    "sigillin>=0.1.0",
-    "mandala-visualizer>=0.1.0",
-    "utac-core>=0.1.0",
-    "cosmic-web>=0.1.0",
+    "mirror-machine>=1.0.0",
+    "entropy-governance>=1.0.0",
+    "sigillin>=1.0.0",
+    "mandala-visualizer>=1.0.0",
+    "utac-core>=1.0.0",
+    "cosmic-web>=1.0.0",
 ]
 dev = [
     "pytest>=7.4.0",
