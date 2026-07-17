@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "advanced-weighting-systems"
+version: "1.0.0"
+date-released: "2026-03-26"
+authors:
+  - name: "GenesisAeon"
+    email: genesis@aeon.ai
+repository-code: "https://github.com/GenesisAeon/AdvancedWeightingSystems"
+license: MIT
+abstract: "Resonance-based, symbolically mirrored coupling of heterogeneous NN models in the AeonLayer for AeonAI (GenesisAeon project, CREP + Sigillin from unified-mandala)"
+keywords:
+  - GenesisAeon
+  - UTAC
+  - CREP
+  - open-science
+  - neural-networks
+  - weighting
+  - resonance
+  - aeon
