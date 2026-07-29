@@ -14,7 +14,8 @@ from advanced_weighting_systems.weighting_engine import WeightingEngine
 
 try:
     __version__ = _version("advanced-weighting-systems")
-except PackageNotFoundError:  # pragma: no cover - not installed, e.g. running from source
+except PackageNotFoundError:
+    # Not installed, e.g. running from source.
     __version__ = "0.0.0+unknown"
 
 __all__ = ["AeonLayer", "SymbolicMirror", "WeightingEngine", "__version__"]
