@@ -10,12 +10,21 @@ aws weight  --model-ids id1,id2,...       [--visualize]
 
 from __future__ import annotations
 
+import sys
 from typing import Annotated
 
 import numpy as np
 import typer
 from rich.console import Console
 from rich.table import Table
+
+# Windows consoles default to a non-UTF-8 codepage, which breaks the norm
+# symbol and box-drawing characters used throughout this CLI with
+# UnicodeEncodeError. Force UTF-8 stdout/stderr so behavior matches
+# Linux/macOS terminals.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
 
 from advanced_weighting_systems.aeon_layer import AeonLayerConfig
 from advanced_weighting_systems.models.coupling import ResonanceCoupling

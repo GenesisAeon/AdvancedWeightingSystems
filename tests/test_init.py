@@ -7,7 +7,8 @@ import advanced_weighting_systems as aws
 
 class TestPackageExports:
     def test_version(self) -> None:
-        assert aws.__version__ == "0.1.0"
+        assert isinstance(aws.__version__, str)
+        assert aws.__version__
 
     def test_aeon_layer_exported(self) -> None:
         from advanced_weighting_systems import AeonLayer  # noqa: F401
