@@ -1,12 +1,12 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19110330.svg)](https://doi.org/10.5281/zenodo.19110330)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21011737.svg)](https://doi.org/10.5281/zenodo.21011737)
 [![PyPI version](https://img.shields.io/pypi/v/advanced-weighting-systems)](https://pypi.org/project/advanced-weighting-systems/)
 [![Tests](https://img.shields.io/badge/tests-99.59%25-green)](https://github.com/GenesisAeon/AdvancedWeightingSystems/actions)
 # advanced-weighting-systems
 **Resonance-based symbolic coupling of heterogeneous neural network models in the AeonLayer**
 
 Version 0.1.0 – GenesisAeon Project
-**DOI**: 10.5281/zenodo.19110330
-**Zenodo Record**: https://zenodo.org/records/19110330
+**DOI**: 10.5281/zenodo.21011737
+**Zenodo Record**: https://zenodo.org/records/21011737
 
 Resonance-based, symbolically mirrored coupling of heterogeneous neural network models (Transformer, CNN, RNN, GraphNN, Spiking) in the AeonLayer for AeonAI. Built on CREP + Sigillin from unified-mandala.
 
@@ -212,7 +212,7 @@ Published at: <https://genesisaeon.github.io/AdvancedWeightingSystems>
   title     = {Advanced Weighting Systems: Resonance-based Coupling of Heterogeneous NN Models},
   year      = {2026},
   version   = {0.1.0},
-  doi       = {10.5281/zenodo.19110330},
+  doi       = {10.5281/zenodo.21011737},
   url       = {https://github.com/GenesisAeon/AdvancedWeightingSystems}
 }
 ```
