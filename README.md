@@ -2,6 +2,9 @@
 [![PyPI version](https://img.shields.io/pypi/v/advanced-weighting-systems)](https://pypi.org/project/advanced-weighting-systems/)
 [![Tests](https://img.shields.io/badge/tests-99.59%25-green)](https://github.com/GenesisAeon/AdvancedWeightingSystems/actions)
 # advanced-weighting-systems
+
+**GenesisAeon Package P67**
+
 **Resonance-based symbolic coupling of heterogeneous neural network models in the AeonLayer**
 
 Version 0.1.0 – GenesisAeon Project
